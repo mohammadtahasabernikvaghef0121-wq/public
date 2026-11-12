@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>مربی | FitMind AI</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <a class="brand" href="/">FitMind<span>AI</span></a>
+      <nav><a href="/">خانه و داشبورد</a></nav>
+    </header>
+    <main class="coach-page">
+      <section class="coach-hero">
+        <span class="eyebrow">مربی فیت‌مایند</span>
+        <h1>محمد مهدی صابر نیک واقف</h1>
+        <p>
+          همراه مسیر تمرین و تندرستی؛ با تأکید بر استمرار، ایمنی و انتخاب‌های
+          واقع‌بینانه.
+        </p>
+        <a href="/" class="btn">رفتن به داشبورد</a>
+      </section>
+      <section class="section">
+        <div class="section-head">
+          <span class="eyebrow">مدارک و گواهی‌ها</span>
+          <h2>گالری مدارک مربی</h2>
+          <p>
+            فقط مدارکی که مدیر بارگذاری کند نمایش داده می‌شوند؛ هیچ مدرک نمونه
+            یا ساختگی درج نشده است.
+          </p>
+        </div>
+        <div id="certList" class="cert-list"><p>در حال بارگذاری…</p></div>
+        <section id="adminUpload" class="price-card hidden">
+          <h3>مدیریت مدارک (مدیر)</h3>
+          <form id="certForm">
+            <label
+              >عنوان<input
+                name="label"
+                maxlength="100"
+                placeholder="مثلاً گواهی مربیگری" /></label
+            ><label
+              >تصویر JPEG، PNG یا WEBP (حداکثر ۳ مگابایت)<input
+                name="certificate"
+                type="file"
+                accept="image/jpeg,image/png,image/webp"
+                required /></label
+            ><button class="btn">بارگذاری مدرک</button>
+          </form>
+          <div id="certAdminList"></div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <a href="/">بازگشت به FitMind AI</a>
+      <p class="credit">طراحی و توسعه: طاها صابر</p>
+    </footer>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script src="/coach.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#7a0d1a" />
+    <meta name="description" content="فیت‌مایند؛ همراه هوشمند تندرستی" />
+    <title>فیت‌مایند AI | همراه تندرستی</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <a class="brand" href="/">FitMind<span>AI</span></a
+      ><button
+        class="menu"
+        id="menu"
+        aria-label="باز کردن منو"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <nav id="nav">
+        <a href="#features">ویژگی‌ها</a><a href="#plans">برنامه‌ها</a
+        ><a href="#reviews">دیدگاه‌ها</a><a href="/coach.html">مربی</a
+        ><a href="#support" id="supportNav">پشتیبانی</a
+        ><button class="btn small" id="authNav">ورود / ثبت‌نام</button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">همراه هوشمند مسیر سلامتی</span>
+          <h1>هر روز، یک قدم<br /><em>نزدیک‌تر به خودت</em></h1>
+          <p>
+            برنامه نمونه تمرین و تغذیه، پیگیری روند وزن و ابزارهای کمکی؛ ساده،
+            فارسی و در اختیار خودت.
+          </p>
+          <div class="actions">
+            <button class="btn" id="startBtn">شروع رایگان</button
+            ><a class="btn ghost" href="/coach.html">آشنایی با مربی</a>
+          </div>
+          <small>ابزار آموزشی؛ جایگزین توصیه پزشک یا متخصص تغذیه نیست.</small>
+        </div>
+        <div class="hero-card" aria-label="نمایش هدف روزانه">
+          <div class="orb">✦</div>
+          <span>مسیر تو، با ریتم خودت</span
+          ><strong>تداوم از کمال مهم‌تر است</strong>
+          <div class="progress"><i></i></div>
+          <small>برنامه متناسب با هدف و اطلاعات خودت</small>
+        </div>
+      </section>
+      <section class="section" id="features">
+        <div class="section-head">
+          <span class="eyebrow">برای مسیر واقعی زندگی</span>
+          <h2>ابزارهایی که به کارت می‌آیند</h2>
+        </div>
+        <div class="cards">
+          <article>
+            <b>◉</b>
+            <h3>تمرین هدفمند</h3>
+            <p>
+              نمونه تمرین ساده بر پایه هدف انتخابی؛ قابل تنظیم و بدون وعده‌های
+              غیرواقعی.
+            </p>
+          </article>
+          <article>
+            <b>◌</b>
+            <h3>تغذیه متعادل</h3>
+            <p>ایده‌های غذایی عمومی، بدون رژیم افراطی یا نسخه کالری ساختگی.</p>
+          </article>
+          <article>
+            <b>↗</b>
+            <h3>روند قابل پیگیری</h3>
+            <p>ثبت وزن و نمودار شخصی برای دیدن روند، نه قضاوت درباره خودت.</p>
+          </article>
+          <article>
+            <b>✧</b>
+            <h3>ابزارهای هوشمند</h3>
+            <p>
+              گفت‌وگو و بررسی تقریبی تصویر غذا، در صورت تنظیم امن سرویس هوش
+              مصنوعی.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="section tinted" id="plans">
+        <div class="section-head">
+          <span class="eyebrow">عضویت اختیاری</span>
+          <h2>شروع کن، بعد تصمیم بگیر</h2>
+          <p>قیمت فقط پس از تنظیم مبلغ توسط مدیر نمایش داده می‌شود.</p>
+        </div>
+        <div class="price-card">
+          <span class="eyebrow">اشتراک ویژه</span>
+          <h3 id="priceText">قیمت هنوز پیکربندی نشده است</h3>
+          <p>
+            مدت اشتراک قابل تنظیم است. تخفیف خرید نخست، در صورت فعال بودن درگاه،
+            سمت سرور محاسبه می‌شود.
+          </p>
+          <button class="btn" id="buyBtn">مشاهده و خرید</button
+          ><small id="gatewayNote"></small>
+        </div>
+      </section>
+      <section class="section" id="reviews">
+        <div class="section-head">
+          <span class="eyebrow">تجربه کاربران</span>
+          <h2>صدای همراهان</h2>
+        </div>
+        <div id="reviewList" class="reviews">
+          <p>در حال دریافت دیدگاه‌ها…</p>
+        </div>
+        <form id="reviewForm" class="review-form hidden">
+          <h3>دیدگاهت را بنویس</h3>
+          <label
+            >امتیاز
+            <select name="rating">
+              <option value="5">۵</option>
+              <option value="4">۴</option>
+              <option value="3">۳</option>
+              <option value="2">۲</option>
+              <option value="1">۱</option>
+            </select></label
+          ><label
+            >متن دیدگاه
+            <textarea
+              name="body"
+              minlength="10"
+              maxlength="500"
+              required
+            ></textarea></label
+          ><button class="btn">ثبت دیدگاه</button>
+        </form>
+      </section>
+      <section class="section dashboard hidden" id="dashboard">
+        <div class="dash-head">
+          <div>
+            <span class="eyebrow">فضای شخصی</span>
+            <h2 id="welcome">داشبورد</h2>
+          </div>
+          <button class="btn ghost small" id="logoutBtn">خروج</button>
+        </div>
+        <div class="tabs" role="tablist">
+          <button data-tab="profile" class="active">پروفایل</button
+          ><button data-tab="train">تمرین</button
+          ><button data-tab="meal">تغذیه</button
+          ><button data-tab="vision">تصویر غذا</button
+          ><button data-tab="chat">گفت‌وگو</button
+          ><button data-tab="weights">وزن</button>
+        </div>
+        <div id="panels">
+          <section class="panel active" id="tab-profile">
+            <form id="profileForm" class="form-grid">
+              <label
+                >سن (۱۸+)
+                <input
+                  name="age"
+                  type="number"
+                  min="18"
+                  max="110"
+                  required /></label
+              ><label
+                >قد (سانتی‌متر)
+                <input
+                  name="height"
+                  type="number"
+                  min="100"
+                  max="250"
+                  required /></label
+              ><label
+                >وزن فعلی (کیلوگرم)
+                <input
+                  name="weight"
+                  type="number"
+                  min="30"
+                  max="350"
+                  step="0.1"
+                  required /></label
+              ><label
+                >هدف<select name="goal">
+                  <option value="fitness">تندرستی</option>
+                  <option value="lose">کاهش تدریجی</option>
+                  <option value="gain">افزایش قدرت و عضله</option>
+                  <option value="strength">قدرت</option>
+                </select></label
+              ><button class="btn">ذخیره پروفایل</button>
+            </form>
+            <p id="premiumInfo"></p>
+          </section>
+          <section class="panel" id="tab-train">
+            <div id="workout"></div>
+          </section>
+          <section class="panel" id="tab-meal"><div id="meals"></div></section>
+          <section class="panel" id="tab-vision">
+            <h3>بررسی تقریبی عکس غذا</h3>
+            <p class="notice">
+              تخمین کالری تقریبی است؛ عکس مقدار دقیق یا مواد را با اطمینان مشخص
+              نمی‌کند. عکس خصوصی شما فقط برای درخواست تحلیل به سرویس تنظیم‌شده
+              فرستاده می‌شود.
+            </p>
+            <form id="visionForm">
+              <input
+                type="file"
+                name="image"
+                accept="image/jpeg,image/png,image/webp"
+                required
+              /><button class="btn">تحلیل عکس</button>
+            </form>
+            <div id="visionResult" class="result"></div>
+          </section>
+          <section class="panel" id="tab-chat">
+            <h3>گفت‌وگوی تندرستی</h3>
+            <form id="chatForm">
+              <textarea
+                name="message"
+                maxlength="2000"
+                required
+                placeholder="سؤالت را بنویس"
+              ></textarea
+              ><button class="btn">ارسال</button>
+            </form>
+            <div id="chatResult" class="result"></div>
+          </section>
+          <section class="panel" id="tab-weights">
+            <h3>ثبت وزن</h3>
+            <form id="weightForm" class="inline">
+              <input
+                name="kg"
+                type="number"
+                min="30"
+                max="350"
+                step="0.1"
+                placeholder="کیلوگرم"
+                required
+              /><input name="day" type="date" required /><button class="btn">
+                ثبت
+              </button>
+            </form>
+            <svg
+              id="chart"
+              viewBox="0 0 700 240"
+              role="img"
+              aria-label="نمودار تغییرات وزن"
+            ></svg>
+            <div id="weightList"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer id="support">
+      <div>
+        <a class="brand" href="/">FitMind<span>AI</span></a>
+        <p>با مهربانی و واقع‌بینی، یک روز در هر بار.</p>
+      </div>
+      <div>
+        <a href="/coach.html">صفحه مربی</a
+        ><a id="telegram" href="#support">پشتیبانی تلگرام</a>
+      </div>
+      <p class="credit" id="credit">طراحی و توسعه: طاها صابر</p>
+      <small>محتوای این وب‌سایت آموزشی است و مشاوره پزشکی محسوب نمی‌شود.</small>
+    </footer>
+    <dialog id="authDialog">
+      <button class="close" id="closeAuth" aria-label="بستن">×</button>
+      <div class="tabs">
+        <button data-auth="login" class="active">ورود</button
+        ><button data-auth="register">ثبت‌نام</button>
+      </div>
+      <form id="authForm">
+        <label>ایمیل<input name="email" type="email" required /></label
+        ><label
+          >گذرواژه (حداقل ۱۰ نویسه)<input
+            name="password"
+            type="password"
+            minlength="10"
+            required
+        /></label>
+        <div class="regfields hidden">
+          <label>سن<input name="age" type="number" min="18" max="110" /></label
+          ><label
+            >قد (cm)<input
+              name="height"
+              type="number"
+              min="100"
+              max="250" /></label
+          ><label
+            >وزن (kg)<input
+              name="weight"
+              type="number"
+              min="30"
+              max="350" /></label
+          ><label
+            >هدف<select name="goal">
+              <option value="fitness">تندرستی</option>
+              <option value="lose">کاهش تدریجی</option>
+              <option value="gain">افزایش قدرت</option>
+              <option value="strength">قدرت</option>
+            </select></label
+          ><label
+            >کد دعوت مدیر (اختیاری)<input name="adminInvite" autocomplete="off"
+          /></label>
+        </div>
+        <button class="btn">ادامه</button>
+        <p class="formmsg" aria-live="polite"></p>
+      </form>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
